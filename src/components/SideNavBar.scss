@@ -1,0 +1,49 @@
+$mainColor: rgb(222, 228, 232);
+$mainShadow: 2px 4px 4px rgb(35, 33, 33);
+$hoverShadow: 2px 4px 4px rgb(108, 106, 106);
+
+.sideicon {
+  width: 24px; 
+  height: 24px;
+  color: $mainColor;
+  transition: fill 0.3s ease-in-out;
+}
+
+button {
+  background: none;
+  border: none; 
+  cursor: pointer; 
+  padding: 8px;
+  
+  &:focus {
+    outline: none; /* Remove a linha (borda) de foco padrão */
+  }
+}
+
+.side-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+  
+  .side-navbar.open {
+    transform: translateX(0);
+  }
+  
+  .menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+  }

@@ -22,7 +22,7 @@ const SideNavBar = () => {
             <div className='line'></div>
           <li className='side-navbar-li'><a href='#merch'>Loja</a></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><a href='#media'>Mídias</a></li>
+          <li className='side-navbar-li'><a href='#galeria'>Galeria</a></li>
             <div className='line'></div>
           <li className='side-navbar-li'><a href='#contact'>Contato</a></li>
             <div className='line'></div>

@@ -47,3 +47,32 @@ button {
     left: 20px;
     z-index: 1100;
   }
+
+.side-navbar-ul{ 
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-right: 7em;
+}
+
+.side-navbar-li {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  & a{
+  text-decoration: none;
+  color: $mainColor;
+  text-shadow: $mainShadow;
+
+  &:hover{
+    text-shadow: $hoverShadow;
+  }
+  }
+}
+
+.line{
+  width: 150%;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}

@@ -17,7 +17,22 @@ const SideNavBar = () => {
       </button>
 
       <nav className={`side-navbar ${isOpen ? 'open' : ''}`}>
+        <ul className='side-navbar-ul'>
+          <li className='side-navbar-li'><a href='#home'>Home</a></li>
+            <div className='line'></div>
+          <li className='side-navbar-li'><a href='#merch'>Loja</a></li>
+            <div className='line'></div>
+          <li className='side-navbar-li'><a href='#media'>Mídias</a></li>
+            <div className='line'></div>
+          <li className='side-navbar-li'><a href='#contact'>Contato</a></li>
+            <div className='line'></div>
+          <li className='side-navbar-li'><a href='#about'>Sobre</a></li>
+            <div className='line'></div>
+          <li className='side-navbar-li'><a href='#restrict'>Restrito</a></li>
+            <div className='line'></div>
+          
 
+        </ul>
       </nav>
     </>
     

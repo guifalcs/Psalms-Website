@@ -18,9 +18,6 @@ const router = createBrowserRouter([
   {
     path: '/loja',
   },
-  {
-    path: 'midias'
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

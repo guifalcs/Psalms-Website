@@ -12,6 +12,15 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+  {
+    path: '/contato'
+  },
+  {
+    path: '/loja',
+  },
+  {
+    path: 'midias'
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

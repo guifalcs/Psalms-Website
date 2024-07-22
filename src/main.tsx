@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
+import Galery from './views/Galery.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/loja',
   },
+  {
+    path: '/galeria',
+    element: <Galery />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

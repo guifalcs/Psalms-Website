@@ -1,0 +1,89 @@
+$mainColor: rgb(222, 228, 232);
+$mainShadow: 3px 3px 5px black;
+$hoverShadow: 2px 4px 4px rgb(108, 106, 106);
+
+.contactContainer{
+    background-image: url('../assets/contactPhoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+
+
+    .leftBox{
+        width: 40%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 7em;
+        margin-bottom: 1em;
+        padding: 5px;
+        border: white 2px solid;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        // border: 1px solid red;
+        
+
+        .title{
+            color: $mainColor;
+            text-shadow: $mainShadow;
+            font-size: 3em;
+            height: fit-content;
+            margin-right: 7em;
+            margin-top: 1em;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+                transition: 2s;
+            }
+        }
+    }
+
+    .textBox{
+        // border: 1px solid blue;
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-left: 8em;
+        margin-top: 5em;
+
+        .subtitle1{
+            color: $mainColor;
+            height: fit-content;
+            text-shadow: $mainShadow;
+            &:hover{
+                text-shadow: $hoverShadow;
+                transition: 2s;
+            }
+        }
+
+        .subtitle{
+            margin-top: 2em;
+            color: $mainColor;
+            height: fit-content;
+            text-shadow: $mainShadow;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+                transition: 2s;
+            }
+        }
+
+        .text{
+            color: $mainColor;
+            height: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1.5em;
+            text-shadow: $mainShadow;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+                transition: 2s;
+            }
+        }
+    }
+}

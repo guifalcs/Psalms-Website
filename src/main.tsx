@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import Galery from './views/Galery.tsx'
+import Contact from './views/Contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/contato'
+    path: '/contato',
+    element: <Contact />
   },
   {
     path: '/loja',

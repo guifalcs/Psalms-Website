@@ -14,8 +14,8 @@ const NavBar = () => {
     <nav className='navbar'>
       <ul className='nav-links'>
         <li><Home11Icon className='icon' /><Link to={'/'}>Home</Link></li>
-        <li><MdiClothesHanger className='icon' /><Link to={'loja'}>Loja</Link></li>
-        <li><MdiCellphone className='icon' /><Link to={'galeria'}>Galeria</Link></li>
+        <li><MdiClothesHanger className='icon' /><Link to={'/loja'}>Loja</Link></li>
+        <li><MdiCellphone className='icon' /><Link to={'/galeria'}>Galeria</Link></li>
         <li><MdiContact className='icon' /><Link to={'/contato'}>Contato</Link></li>
       </ul>
       

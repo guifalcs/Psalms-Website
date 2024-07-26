@@ -1,14 +1,26 @@
 import './Contact.scss'
 import NavBar from '../components/NavBar'
 import { InstagramIcon, LogosYoutubeIcon, CarbonPhoneFilled, IcBaselineEmail } from '../assets/icons'
+import { useEffect, useState } from 'react'
 
 
 const Contact = () => {
+
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.src = './public/homePhoto.jpg'
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+  }, [])
   
   return (
     <>
-    
-        <NavBar />
+    {imageLoaded && <NavBar />}
+
+                 
 
         <div className="contactContainer">
 
@@ -32,6 +44,7 @@ const Contact = () => {
             </div>
 
         </div>
+        
     
     </>
   )

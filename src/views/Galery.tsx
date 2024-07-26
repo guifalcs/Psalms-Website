@@ -5,7 +5,16 @@ import './Galery.scss';
 const Galery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false)
   const sliderRefs = useRef<(HTMLImageElement | null)[]>([]);
+
+  useEffect(() => {
+    const img = new Image()
+    img.src = './public/homePhoto.jpg'
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+  }, [])
 
   useEffect(() => {
     const imageUrls = [
@@ -75,8 +84,8 @@ const Galery = () => {
 
   return (
     <>
-      <NavBar />
-
+      {imageLoaded && <NavBar />}
+    
       {imagesLoaded ? (
         <div className="galeryContainer">
           <div className='containerSlider'>
@@ -145,7 +154,7 @@ const Galery = () => {
           </div>
         </div>
       ) : (
-        <div>Loading...</div> // Customize this loading message as needed
+        <div>Loading...</div> 
       )}
     </>
   );

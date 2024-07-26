@@ -10,7 +10,7 @@ const Contact = () => {
 
   useEffect(() => {
     const img = new Image()
-    img.src = './public/homePhoto.jpg'
+    img.src = './homePhoto.jpg'
     img.onload = () => {
       setImageLoaded(true)
     }

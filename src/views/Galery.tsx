@@ -10,7 +10,7 @@ const Galery = () => {
 
   useEffect(() => {
     const img = new Image()
-    img.src = './public/homePhoto.jpg'
+    img.src = 'src/assets/fundobw.jpg'
     img.onload = () => {
       setImageLoaded(true)
     }

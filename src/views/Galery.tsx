@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import NavBar from '../components/NavBar';
+import Loading from '../components/Loading';
 import './Galery.scss';
 
 const Galery = () => {
@@ -154,7 +155,7 @@ const Galery = () => {
           </div>
         </div>
       ) : (
-        <div>Loading...</div> 
+        <Loading /> 
       )}
     </>
   );

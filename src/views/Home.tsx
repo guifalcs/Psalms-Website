@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar'
 import './Home.scss'
 import { useState, useEffect } from 'react'
+import Loading from '../components/Loading'
 
 const Home = () => {
 
@@ -19,11 +20,11 @@ const Home = () => {
 
     {imageLoaded && <NavBar />}
 
-    {imageLoaded &&
+    {imageLoaded ?
 
     <div className='homeContainer'>
       <h1 id='mainName'>Psalms</h1>
-    </div>
+    </div> : <Loading />
     }
     </>
   )

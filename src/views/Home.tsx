@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
 
-    {imageLoaded && <NavBar />}
+    {imageLoaded ? <NavBar /> : <Loading/>}
 
     {imageLoaded ?
 

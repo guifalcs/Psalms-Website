@@ -1,0 +1,75 @@
+$mainColor: rgb(222, 228, 232);
+$mainShadow: 2px 4px 4px rgb(35, 33, 33);
+$hoverShadow: 2px 4px 4px rgb(108, 106, 106);
+
+.header{
+    height: 60vh;
+    background-image: url('../assets/merchPhoto.jpg');
+    background-size: cover;
+    border-bottom: 2px solid white
+}
+
+.merchContainer{
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .productCard{
+        padding: 1em;
+        padding-top: 2em;
+        border-radius: 10px;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        height: 27em;
+        width: 15em;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(255, 255, 255, 0.5) 0px 50px 100px -20px, rgba(255, 255, 255, 0.6) 0px 30px 60px -30px;
+
+        &:hover{
+            animation: zoomIn 1s ease-in-out infinite alternate;
+        }
+
+        img{
+            height: 24em;
+            width: auto;
+            border: 2px solid black;
+        }
+
+        .line{
+            margin-top: 0.4em;
+            width: 80%;
+            border: solid 1px black;
+        }
+
+        h3{
+            margin-top: 0.5em;
+        }
+
+        .price{
+            margin-top: 0.2em;
+            font-size: 1.15em;
+        }
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.05)
+    }
+}

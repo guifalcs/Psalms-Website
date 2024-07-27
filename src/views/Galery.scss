@@ -1,0 +1,65 @@
+$mainColor: rgb(222, 228, 232);
+$mainShadow: 2px 4px 4px rgb(35, 33, 33);
+$hoverShadow: 2px 4px 4px rgb(108, 106, 106);
+
+.galeryContainer {
+    background-image: url('src/assets/fundobw.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSlider{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1em;
+}
+
+.containerImages {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.slider{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity .2s;
+  box-shadow: rgba(194, 193, 193, 0.56) 0px 6px 20px 4px;
+}
+
+.on{
+  opacity: 1
+}
+
+#prevButton, #nextButton{
+  width: 42px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid $mainColor;
+  margin: 2em;
+  box-shadow: rgba(194, 193, 193, 0.56) 0px 6px 20px 4px;;
+
+   & img{
+    width: 100%;
+    height: 100%;
+   }
+}
+
+#prevButton{
+  transform: rotate(180deg);
+}
+

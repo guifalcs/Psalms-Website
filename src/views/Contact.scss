@@ -1,0 +1,110 @@
+$mainColor: rgb(222, 228, 232);
+$mainShadow: 3px 3px 5px black;
+$hoverShadow: 2px 4px 4px rgb(108, 106, 106);
+
+.contactContainer{
+    background-image: url('../assets/contactPhoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+
+    .mainBox{
+        width: 40%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
+        padding: 5px;
+        border: white 2px solid;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+
+        .title{
+            color: $mainColor;
+            text-shadow: $mainShadow;
+            font-size: 3em;
+            height: fit-content;
+            margin-right: 7em;
+            margin-top: 1em;
+            transition: text-shadow 1s ease;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+            }
+        }
+    }
+
+    .textBox{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-left: 8em;
+        margin-top: 5em;
+
+        .subtitle1{
+            color: $mainColor;
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            text-shadow: $mainShadow;
+            transition: text-shadow 1s ease;
+            &:hover{
+                text-shadow: $hoverShadow;
+            }
+        }
+
+        .subtitle{
+            margin-top: 2em;
+            color: $mainColor;
+            height: fit-content;
+            text-shadow: $mainShadow;
+            display: flex;
+            align-items: center;
+            transition: text-shadow 1s ease;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+            }
+        }
+
+        .text{
+            color: $mainColor;
+            height: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1.5em;
+            text-shadow: $mainShadow;
+            display: flex;
+            align-items: center;
+            text-decoration: underline;
+            transition: text-shadow 1s ease;
+
+            &:hover{
+                text-shadow: $hoverShadow;
+            }
+        }
+
+        span{
+            margin-left: 0.2em;
+        }
+
+        .iconsBelow{
+            display: flex;
+            align-items: center;
+            margin-top: 4em;
+            width: fit-content;
+            padding: 0;
+
+            .ytIcon{
+                margin-left: 1em;
+            }
+        }
+    }
+}

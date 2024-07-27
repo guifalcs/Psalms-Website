@@ -2,6 +2,7 @@ import './Contact.scss'
 import NavBar from '../components/NavBar'
 import { InstagramIcon, LogosYoutubeIcon, CarbonPhoneFilled, IcBaselineEmail } from '../assets/icons'
 import { useEffect, useState } from 'react'
+import Loading from '../components/Loading'
 
 
 const Contact = () => {
@@ -18,7 +19,7 @@ const Contact = () => {
   
   return (
     <>
-    {imageLoaded && <NavBar />}
+    {imageLoaded ? <NavBar /> : <Loading/>}
 
                  
 

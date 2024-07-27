@@ -8,18 +8,18 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; // Ensure the container covers the full viewport height
-    min-width: 100vw;
+    height: 100vh; 
+    width: 100vw;
     display: flex;
-    justify-content: center; // Center horizontally
-    align-items: flex-start; // Align items to the top
+    justify-content: center; 
+    align-items: flex-start; 
 } 
 
 #mainName {
-    margin-top: 20vh; // Adjust this value to move the element up or down
+    margin-top: 20vh; 
     color: $mainColor;
     text-shadow: $mainShadow;
-    font-size: 7em; //needs to be adapted to cellphones
+    font-size: 7em; 
     transition: text-shadow 0.7s ease;
 }
 

@@ -1,6 +1,7 @@
 import './SideNavBar.scss';
 import { useState } from 'react';
 import { Cancel01Icon, Menu01Icon } from '../assets/icons';
+import { Link } from 'react-router-dom';
 
 const SideNavBar = () => {
 
@@ -18,15 +19,15 @@ const SideNavBar = () => {
 
       <nav className={`side-navbar ${isOpen ? 'open' : ''}`}>
         <ul className='side-navbar-ul'>
-          <li className='side-navbar-li'><a href='#home'>Home</a></li>
+          <li className='side-navbar-li'><Link to={'/'}>Home</Link></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><a href='#merch'>Loja</a></li>
+          <li className='side-navbar-li'><Link to={'/loja'}>Loja</Link></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><a href='#galeria'>Galeria</a></li>
+          <li className='side-navbar-li'><Link to={'/galeria'}>Galeria</Link></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><a href='#contact'>Contato</a></li>
+          <li className='side-navbar-li'><Link to={'/contato'}>Contato</Link></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><a href='#restrict'>Restrito</a></li>
+          <li className='side-navbar-li'><a>Restrito</a></li>
             <div className='line'></div>
             
           

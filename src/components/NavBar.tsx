@@ -11,6 +11,7 @@ const NavBar = () => {
     
     <SideNavBar /> 
 
+    <div className="container">
     <nav className='navbar'>
       <ul className='nav-links'>
         <li><Home11Icon className='icon' /><Link to={'/'}>Home</Link></li>
@@ -20,6 +21,8 @@ const NavBar = () => {
       </ul>
       
     </nav>
+    </div>
+    
     </>
   );
 };

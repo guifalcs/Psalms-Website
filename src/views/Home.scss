@@ -12,7 +12,8 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
     width: 100vw;
     display: flex;
     justify-content: center; 
-    align-items: flex-start; 
+    align-items: flex-start;
+    overflow: hidden; 
 } 
 
 #mainName {

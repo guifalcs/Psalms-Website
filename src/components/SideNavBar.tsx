@@ -26,12 +26,7 @@ const SideNavBar = () => {
           <li className='side-navbar-li'><Link to={'/galeria'}>Galeria</Link></li>
             <div className='line'></div>
           <li className='side-navbar-li'><Link to={'/contato'}>Contato</Link></li>
-            <div className='line'></div>
-          <li className='side-navbar-li'><a>Restrito</a></li>
-            <div className='line'></div>
-            
-          
-
+            <div className='line'></div>   
         </ul>
       </nav>
     </>

@@ -48,6 +48,10 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
             border: 2px solid black;
         }
 
+        .noBorder{
+            border: none
+        }
+
         .line{
             margin-top: 0.4em;
             width: 80%;
@@ -61,6 +65,7 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
         .price{
             margin-top: 0.2em;
             font-size: 1.15em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     }
 }

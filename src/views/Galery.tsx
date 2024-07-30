@@ -1,21 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import NavBar from '../components/NavBar';
-import Loading from '../components/Loading';
 import './Galery.scss';
 
 const Galery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false)
+ 
   const sliderRefs = useRef<(HTMLImageElement | null)[]>([]);
-
-  useEffect(() => {
-    const img = new Image()
-    img.src = 'src/assets/fundobw.jpg'
-    img.onload = () => {
-      setImageLoaded(true)
-    }
-  }, [])
 
   useEffect(() => {
     const imageUrls = [
@@ -30,14 +20,7 @@ const Galery = () => {
       "src/assets/img9.jpg",
     ];
 
-    let loadedImagesCount = 0;
 
-    const handleImageLoad = () => {
-      loadedImagesCount++;
-      if (loadedImagesCount === imageUrls.length) {
-        setImagesLoaded(true);
-      }
-    };
 
     const handleImageError = () => {
       // Handle image loading errors if needed
@@ -46,7 +29,6 @@ const Galery = () => {
     imageUrls.forEach(url => {
       const img = new Image();
       img.src = url;
-      img.onload = handleImageLoad;
       img.onerror = handleImageError;
     });
   }, []);

@@ -1,19 +1,7 @@
 import './Merch.scss'
 import NavBar from '../components/NavBar'
-import { useState, useEffect } from 'react'
-import Loading from '../components/Loading'
 
 const Merch = () => {
-
-    const [imageLoaded, setImageLoaded] = useState(false)
-
-    useEffect(() => {
-        const img = new Image()
-        img.src = 'src/assets/merchPhoto.jpg'
-        img.onload = () => {
-          setImageLoaded(true)
-        }
-      }, [])
 
   return (
     <> 

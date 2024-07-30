@@ -33,7 +33,7 @@ const Merch = () => {
             
             <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
             <div className="productCard">
-                <img src="src/assets/chaveiroPsalms.jpg" alt="Camisa Três Dias" />
+                <img className='noBorder' src="src/assets/chaveiro.png" alt="Camisa Três Dias" />
                 <div className="line"></div>
                 <h3>Chaveiro Psalms</h3>
                 <span className='price'>R$19,99</span>

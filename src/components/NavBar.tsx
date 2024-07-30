@@ -1,5 +1,5 @@
 import './NavBar.scss';
-import { Home11Icon, MdiClothesHanger, MdiContact, MdiCellphone } from '../assets/icons';
+import { Home11Icon, MdiClothesHanger, MdiContact, MdiCellphone } from '../../public/assets/icons';
 import SideNavBar from './SideNavBar';
 import { Link } from 'react-router-dom';
 

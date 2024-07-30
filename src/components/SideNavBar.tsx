@@ -1,6 +1,6 @@
 import './SideNavBar.scss';
 import { useState } from 'react';
-import { Cancel01Icon, Menu01Icon } from '../assets/icons';
+import { Cancel01Icon, Menu01Icon } from '../../public/assets/icons';
 import { Link } from 'react-router-dom';
 
 const SideNavBar = () => {

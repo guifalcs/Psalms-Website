@@ -77,54 +77,63 @@ const Galery = () => {
             </button>
             <div className="containerImages">
               <img
+                loading='lazy'
                 className='slider on'
                 src="/img1.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[0] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img2.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[1] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img3.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[2] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img4.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[3] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img5.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[4] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img6.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[5] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img7.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[6] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img8.jpg"
                 alt=""
                 ref={(el) => (sliderRefs.current[7] = el)}
               />
               <img
+                loading='lazy'
                 className='slider'
                 src="/img9.jpg"
                 alt=""

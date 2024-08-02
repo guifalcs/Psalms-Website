@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import Galery from './views/Galery.tsx'
 import Contact from './views/Contact.tsx'
 import Merch from './views/Merch.tsx'
 
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
     path: '/loja',
     element: <Merch />
   },
-  {
-    path: '/galeria',
-    element: <Galery />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

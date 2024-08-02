@@ -23,8 +23,6 @@ const SideNavBar = () => {
             <div className='line'></div>
           <li className='side-navbar-li'><Link to={'/loja'}>Loja</Link></li>
             <div className='line'></div>
-          <li className='side-navbar-li'><Link to={'/galeria'}>Galeria</Link></li>
-            <div className='line'></div>
           <li className='side-navbar-li'><Link to={'/contato'}>Contato</Link></li>
             <div className='line'></div>   
         </ul>

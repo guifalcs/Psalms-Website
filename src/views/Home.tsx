@@ -1,7 +1,7 @@
 import NavBar from '../components/NavBar'
 import './Home.scss'
+import { Blurhash } from 'react-blurhash'
 import { useState, useEffect } from 'react'
-import Loading from '../components/Loading'
 
 const Home = () => {
 
@@ -15,17 +15,39 @@ const Home = () => {
     }
   }, [])
 
+  const blurHash = 'L48zohWV57xa_Ms:i_fkIVj[aya{'
+
   return (
     <>
 
-    {imageLoaded ? <NavBar /> : <Loading/>}
-
-    {imageLoaded ?
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <NavBar />
+      </div>
 
     <div className='homeContainer'>
+      {!imageLoaded && (
+
+        <div className='loadingContainer'>
+        <Blurhash
+          hash={blurHash}
+          width={window.innerWidth}
+          height={window.innerHeight}
+          resolutionX={32}
+          resolutionY={32}
+          punch={1}
+        />
+        </div>
+      )}
+      <img 
+       src="./homePhoto.jpg"
+       alt="Psalms"
+       className={`backgroundImage ${imageLoaded ? 'loaded' : 'loading'}`}
+       onLoad={()=>setImageLoaded(true)}
+        />
+      
       <h1 id='mainName'>Psalms</h1>
-    </div> : <Loading />
-    }
+    </div>
+    
     </>
   )
 }

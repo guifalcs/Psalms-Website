@@ -54,6 +54,11 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
       margin-bottom: 1em;
     }
 
+    @media only screen and (max-width: 478px) {
+      height: 55vh;
+      margin-bottom: 5em;
+    }
+
     .title {
       color: $mainColor;
       text-shadow: $mainShadow;
@@ -67,7 +72,7 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
         text-shadow: $hoverShadow;
       }
 
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (max-width: 1296px) {
         font-size: 2.5em; 
         margin-right: 0;
         margin-top: 0.5em;
@@ -94,6 +99,11 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
       margin-top: 2em;  
     }
 
+    @media only screen and (max-width: 445px) {
+      margin-top: 2em; 
+      margin-left: 2em; 
+    }
+    
     .subtitle1, .subtitle, .text {
       color: $mainColor;
       display: flex;

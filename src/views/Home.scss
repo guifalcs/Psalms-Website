@@ -46,8 +46,17 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
     text-shadow: $mainShadow;
     font-size: 7em; 
     transition: text-shadow 0.7s ease;
-}
 
-#mainName:hover{
+    @media only screen and (max-width: 426px){
+        font-size: 5em;
+    }
+
+    
+    @media only screen and (max-width: 292px){
+        font-size:4em;
+        }
+
+    &:hover{
     text-shadow: $hoverShadow;
+    }
 }

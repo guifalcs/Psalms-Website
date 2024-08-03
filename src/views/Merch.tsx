@@ -7,6 +7,7 @@ const Merch = () => {
 
     const camisaBlurHash = "TpM@l$j[~qt7j[M{~qj[IU-;j[xu"
     const chaveiroBlurHash = "TAS?Gdoz~p%2ayWC%Mj[IUt8j[s:"
+    const headerBlurhash = "LDA,zkIUj[Rj~qIURjRj~qofM{ay"
 
     const [camisaLoaded, setCamisaLoaded] = useState(false);
     const [chaveiroLoaded, setChaveiroLoaded] = useState(false);
@@ -16,6 +17,8 @@ const Merch = () => {
           <div className="header">
             <NavBar />
           </div>
+
+          
           <div className="merchContainer">
             <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
               <div className="productCard">

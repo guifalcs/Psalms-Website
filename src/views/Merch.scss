@@ -45,6 +45,13 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
         img{
             height: 21em;
             width: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            opacity: 0;
+
+            &.loaded{
+                opacity: 1;
+            }
         }
 
         .line{

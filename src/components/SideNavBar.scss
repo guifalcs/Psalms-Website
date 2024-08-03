@@ -76,3 +76,15 @@ button {
   width: 150%;
   border-bottom: 1px solid rgba(255,255,255,.25);
 }
+
+.logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1200; 
+  
+  .psalmsLogo {
+    width: auto;
+    height: 60px; 
+  }
+}

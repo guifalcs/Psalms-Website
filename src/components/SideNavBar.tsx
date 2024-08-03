@@ -27,6 +27,10 @@ const SideNavBar = () => {
             <div className='line'></div>   
         </ul>
       </nav>
+      
+      <div className="logo">
+        <img className='psalmsLogo' src="./logoPsalms.png" alt="" />
+      </div>
     </>
     
 )};

@@ -29,7 +29,9 @@ const SideNavBar = () => {
       </nav>
       
       <div className="logo">
-        <img className='psalmsLogo' src="./logoPsalms.png" alt="" />
+        <a href="https://www.instagram.com/psalmsband/">
+          <img className='psalmsLogo' src="./logoPsalms.png" alt="" />
+        </a>
       </div>
     </>
     

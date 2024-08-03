@@ -9,16 +9,35 @@ const Merch = () => {
     const chaveiroBlurHash = "TAS?Gdoz~p%2ayWC%Mj[IUt8j[s:"
     const headerBlurhash = "LDA,zkIUj[Rj~qIURjRj~qofM{ay"
 
+    const [headerLoaded, setHeaderLoaded] = useState(false);
     const [camisaLoaded, setCamisaLoaded] = useState(false);
     const [chaveiroLoaded, setChaveiroLoaded] = useState(false);
 
     return (
         <>
-          <div className="header">
+         <div className="header">
             <NavBar />
-          </div>
+            {!headerLoaded && (
+            <Blurhash
+                hash={headerBlurhash}
+                width={1600} 
+                height={900} 
+                resolutionX={32}
+                resolutionY={32}
+                punch={1}
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+            )}
+            <img
+            src="./merchPhoto.jpg"
+            alt="Header"
+            className="headerImage"
+            onLoad={() => setHeaderLoaded(true)}
+            loading='lazy'
+            />
+        </div>
 
-          
+
           <div className="merchContainer">
             <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
               <div className="productCard">

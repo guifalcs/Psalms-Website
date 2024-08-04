@@ -2,6 +2,8 @@ import NavBar from '../components/NavBar'
 import './Home.scss'
 import { Blurhash } from 'react-blurhash'
 import { useState, useEffect } from 'react'
+import { MdiSpotify, MdiYoutube, IlInstagram } from '../../public/assets/icons'
+
 
 const Home = () => {
 
@@ -24,7 +26,7 @@ const Home = () => {
         <NavBar />
       </div>
 
-    <div className='homeContainer'>
+    <div className='homeImageContainer'>
       {!imageLoaded && (
 
         <div className='loadingContainer'>
@@ -47,6 +49,19 @@ const Home = () => {
       
       <h1 id='mainName'>Psalms</h1>
     </div>
+
+      <div className="homeContainer">
+        <div className="publicity">
+          <img className='capa' src="./capaocaminho.png" alt='Capa "O caminho"' loading='lazy' />
+          <h2>"O caminho"</h2>
+          <p>Disponível em breve</p>
+          <div className="homeIcons">
+            <MdiSpotify/>
+            <a className='icon' href="http://www.youtube.com/@psalmsband"><MdiYoutube/></a>
+            <a className='icon' href="https://www.instagram.com/psalmsband/"><IlInstagram/></a>
+            </div>
+        </div>
+       </div>
     
     </>
   )

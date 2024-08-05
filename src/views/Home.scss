@@ -150,7 +150,11 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
     }
 
     @media only screen and (max-width: 416px){
-       display: none;
+    margin-top: 2em;
+    }
+
+    @media only screen and (max-width: 335px){
+    margin-top: 1.5em;
     }
 
     &:hover{

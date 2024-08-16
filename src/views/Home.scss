@@ -48,7 +48,21 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+
+        #preSave{
+            overflow: hidden;
+
+            button{
+                margin-top: 1em;
+                color: $mainColor;
+                font-size: 2em;
+                text-decoration:underline;
+
+                &:hover{
+                    color: rgb(129, 129, 180);
+                }
+            }
+        }
 
         .capa{
             width: 70%;
@@ -60,6 +74,7 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
             margin-top: 1em; 
             text-shadow: 2px 2px 2px rgb(108, 106, 106);
             overflow: hidden;
+           
         }
 
         p{
@@ -71,8 +86,8 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
 
         .homeIcons{
             width: 5em;
-            margin-top: 4em;
-            overflow: hidden;
+            margin-top: 3em;
+            overflow: hidden; 
             display: flex;
             justify-content: space-around;
 

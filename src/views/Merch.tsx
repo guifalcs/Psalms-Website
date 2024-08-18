@@ -8,10 +8,12 @@ const Merch = () => {
     const camisaBlurHash = "TpM@l$j[~qt7j[M{~qj[IU-;j[xu"
     const chaveiroBlurHash = "TAS?Gdoz~p%2ayWC%Mj[IUt8j[s:"
     const headerBlurhash = "LDA,zkIUj[Rj~qIURjRj~qofM{ay"
+    const pulseiraBlurHash ='LYRp8-j[-;j[%Mj[Rjay~qfQIUj['
 
     const [headerLoaded, setHeaderLoaded] = useState(false);
     const [camisaLoaded, setCamisaLoaded] = useState(false);
     const [chaveiroLoaded, setChaveiroLoaded] = useState(false);
+    const [pulseiraLoaded, setPulseiraLoaded] = useState(false);
 
     return (
         <>
@@ -87,7 +89,32 @@ const Merch = () => {
                 />
                 <div className="line"></div>
                 <h3>Chaveiro Psalms</h3>
-                <span className='price'>R$19,99</span>
+                <span className='price'>R$14,99</span>
+              </div>
+            </a>
+            <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
+              <div className="productCard">
+                {!chaveiroLoaded && (
+                  <Blurhash
+                    hash={pulseiraBlurHash}
+                    width={240}
+                    height={336}
+                    resolutionX={32}
+                    resolutionY={32}
+                    punch={1}
+                    style={{ width: '15em', height: '21em', borderRadius: '10px' }}
+                  />
+                )}
+                <img
+                  src="/pulseira.jpg"
+                  alt="Pulseira Psalms"
+                  className={`pulseira ${pulseiraLoaded ? 'loaded' : 'loading'}`}
+                  onLoad={() => setPulseiraLoaded(true)}
+                  loading='lazy'
+                />
+                <div className="line"></div>
+                <h3>Pulseira Psalms</h3>
+                <span className='price'>R$9,99</span>
               </div>
             </a>
           </div>

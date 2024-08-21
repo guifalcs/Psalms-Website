@@ -152,6 +152,8 @@ $hoverShadow: 2px 4px 4px rgb(108, 106, 106);
     text-shadow: $mainShadow;
     font-size: 7em; 
     transition: text-shadow 0.7s ease;
+    letter-spacing: -0.04em;
+
 
     @media only screen and (max-width: 645px){
         font-size: 5em;

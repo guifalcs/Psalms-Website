@@ -41,7 +41,7 @@ const Merch = () => {
 
 
           <div className="merchContainer">
-            <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
+            <a href="https://loja.infinitepay.io/esdrassathler">
               <div className="productCard">
                 {!camisaLoaded && (
                   <Blurhash
@@ -67,7 +67,7 @@ const Merch = () => {
               </div>
             </a>
     
-            <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
+            <a href="https://loja.infinitepay.io/esdrassathler">
               <div className="productCard">
                 {!chaveiroLoaded && (
                   <Blurhash
@@ -92,7 +92,7 @@ const Merch = () => {
                 <span className='price'>R$14,99</span>
               </div>
             </a>
-            <a href="https://forms.gle/qZsKUMs8zJZM3xxXA">
+            <a href="https://loja.infinitepay.io/esdrassathler">
               <div className="productCard">
                 {!chaveiroLoaded && (
                   <Blurhash

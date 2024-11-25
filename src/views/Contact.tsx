@@ -3,8 +3,6 @@ import { Blurhash } from "react-blurhash";
 import "./Contact.scss";
 import NavBar from "../components/NavBar";
 import {
-  InstagramIcon,
-  LogosYoutubeIcon,
   CarbonPhoneFilled,
   IcBaselineEmail,
 } from "../../public/assets/icons";
@@ -54,18 +52,6 @@ const Contact = () => {
                 <span>Telefone</span>
               </h3>
               <p className="text">+55 31 7564-7028</p>
-
-              <div className="iconsBelow">
-                <a
-                  className="instaIcon"
-                  href="https://www.instagram.com/psalmsband/"
-                >
-                  <InstagramIcon />
-                </a>
-                <a className="ytIcon" href="http://www.youtube.com/@psalmsband">
-                  <LogosYoutubeIcon />
-                </a>
-              </div>
             </div>
           </div>
         )}

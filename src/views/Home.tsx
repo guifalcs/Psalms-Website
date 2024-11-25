@@ -48,6 +48,8 @@ const Home = () => {
 
       <div className="homeContainer">
         <div className="publicity">
+          <h1 className="title">Confira as músicas do EP "O Caminho":</h1>
+
           <div className="single">
             <div className="singleImgContainer">
               <img
@@ -62,10 +64,10 @@ const Home = () => {
 
             <div className="singleContentContainer">
               <p>
-                Mais do que uma música, "O Amor Venceu" é um testemunho da
-                capacidade do amor divino de superar qualquer desafio e um
-                convite para que todos experimentem e compartilhem essa
-                esperança transformadora.
+                "O Amor Venceu" é uma mensagem profunda que celebra a vitória do
+                amor divino sobre as adversidades. A canção reflete a crença de
+                que, mesmo nas tempestades mais intensas, o amor de Cristo tem o
+                poder de curar e trazer paz aos corações.
               </p>
             </div>
 

@@ -53,12 +53,13 @@ const Home = () => {
       <div className="homeContainer">
         <div className="publicity">
           <img className='capa' src="./capaocaminho.png" alt='Capa "O caminho"' loading='lazy' />
-          <div id='ouca'><a href="https://onerpm.link/PSALMS-TresDias"><button>Ouça "Três Dias"</button></a></div>
+          <div id='ouca'><a href="https://onerpm.link/PSALMS-TresDias"></a></div>
           <div className="homeIcons">
             <MdiSpotify/>
             <a className='icon' href="http://www.youtube.com/@psalmsband"><MdiYoutube/></a>
             <a className='icon' href="https://www.instagram.com/psalmsband/"><IlInstagram/></a>
             </div>
+
         </div>
        </div>
     

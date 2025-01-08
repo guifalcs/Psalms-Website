@@ -117,6 +117,31 @@ const Merch = () => {
                 <span className='price'>R$9,99</span>
               </div>
             </a>
+            <a href="https://loja.infinitepay.io/esdrassathler">
+            <div className="productCard">
+                {!chaveiroLoaded && (
+                  <Blurhash
+                    hash={pulseiraBlurHash}
+                    width={240}
+                    height={336}
+                    resolutionX={32}
+                    resolutionY={32}
+                    punch={1}
+                    style={{ width: '15em', height: '21em', borderRadius: '10px' }}
+                  />
+                )}
+                <img
+                  src="/oamorvenceushirt.jpg"
+                  alt="Camisa O Amor Venceu"
+                  className={`pulseira ${pulseiraLoaded ? 'loaded' : 'loading'}`}
+                  onLoad={() => setPulseiraLoaded(true)}
+                  loading='lazy'
+                />
+                <div className="line"></div>
+                <h3>Camisa O Amor Venceu</h3>
+                <span className='price'>R$79,99</span>
+              </div>
+            </a>
           </div>
         </>
       );
